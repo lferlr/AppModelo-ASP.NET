@@ -28,7 +28,7 @@ namespace DevIO.UI.Site.Controllers
             _contexto.SaveChanges();
 
             var aluno2 = _contexto.Alunos.Find(aluno.Id);
-            var aluno3 = _contexto.Alunos.FirstOrDefault(a=>a.Email == "eduardo@eduardopires.net.br");
+            var aluno3 = _contexto.Alunos.FirstOrDefault(a => a.Email == "eduardo@eduardopires.net.br");
             var aluno4 = _contexto.Alunos.Where(a => a.Nome == "Eduardo");
 
             aluno.Nome = "João";
